@@ -1,0 +1,58 @@
+
+*cursor: #dedee9
+URxvt.background:	[75]#2e3440
+URxvt.foreground:	#dedee9
+URxvt.font:		xft:terminus:size=14:style=bold
+URxvt.scrollBar:	false	
+
+!black
+*color0: 		#3b4252
+*color8:		#3b4252
+
+!red
+*color1:		#bf616a
+*color9:		#bf616a
+
+!green
+*color2:		#a3be8c
+*color10:		#a3be8c
+
+!yellow
+*color3:		#ebcb8b
+*color11:		#ebcb8b
+
+!blue
+*color4:		#81a1c1
+*color12:		#81a1c1
+
+!!magenta
+*color5:		#b48ead
+*color13:		#b48ead
+
+!cyan
+*color6:		#88c0d0
+*color14:		#88c0d0
+
+!white
+*color7:		#d8dee9
+*color15:		#d8dee9
+
+URxvt.depth: 32
+URxvt.transparent:	false	
+URxvt.geometry: 120X35
+!perl scripts
+URxvt.perl-ext:	default, matcher, url-select, fullscreen, resize-font, tabbed
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/librewolf
+URxvt.url-select.underline: true
+URxvt.keysym.F11: perl:fullscreen:switch
+
+URxvt.keysym.C-Down:  resize-font:smaller
+URxvt.keysym.C-Up:    resize-font:bigger
+
+! Restore Ctrl+Shift+(c|v)
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.iso14755:	false
+URxvt.iso14755_52: false
+
